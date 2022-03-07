@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://css.gg/menu-right.css' rel='stylesheet'>
+    <link href='https://css.gg/close-r.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <title>Trial Web Page</title>
+</head>
+<body>
+    <main class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <section class="nav-link" id="navLinks">
+                <i class="gg-close-r" onclick="hideMenu()"></i>
+                <ul type="none">
+                    <li><b><a href="">ABOUT ME</a></b></li>
+                    <li><b><a href="">PROJECT</a></b></li>
+                    <li><b><a href="">COURSE</a></b></li>
+                    <li><b><a href="">BLOG</a></b></li>
+                    <li><b><a href="">CONTACT</a></b></li>
+                </ul>
+            </section>
+            <i class="gg-menu-right" onclick="showMenu()"></i>   
+        </nav>
+        <h1>CONTACT</h1>
+        <p>we would like to help you withyour queries</p>
+        
+    </main>
+
+<!-- -----------CONTACT CONTENT-------------- -->
+<div class="container">
+    <div class="contact-box">
+        <div class="left-side"><h3>Fill your details</h3>
+            <div class="input-box">
+                <div class="input-group">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" placeholder="John Smith">
+                </div>
+                <div class="input-group">
+                    <label for="Phone Number">Phone Number</label>
+                    <input type="number" placeholder="9876543210">
+                </div>
+                
+            </div>
+            <div class="input-box">
+                <div class="input-group">
+                    <label for="Email ID">Email ID</label>
+                    <input type="text" placeholder="abcd@gmail.com">
+                </div>
+                <div class="input-group">
+                    <label for="Subject">Subject</label>
+                    <input type="text" placeholder="request for solutions">
+                </div>
+                
+            </div>
+            <div class="input-group">
+                <label for="Subject"></label>
+                <textarea rows="5" placeholder="Type your problem" ></textarea>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </div>
+        <div class="right-side"><h3>Reach us</h3>
+            <table>
+                <tr>
+                    <td>Email ID:</td>
+                    <td>abcd@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>9786756453</td>
+                </tr><tr>
+                    <td>Address:</td>
+                    <td>hno.a,h street,a area,b city,d state</td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+</div>
+<a href=""></a>
+
+
+<!-- --------FOOTER--------         -->
+    <section class="footer">
+        <h4>Pre-Bootcamp</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolores distinctio hic consectetur deserunt laudantium eos earum asperiores commodi provident deleniti. Aliquid odit ut, 
+            ipsam placeat architecto cumque eveniet harum ullam?
+        </p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+            <span class="iconify" data-icon="simple-icons:netlify"></span>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Sabarish C</p>
+    </section>
+    
+
+<!-- ------------SCRIPT FOR TOGGLE MENU-------------     -->
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }    
+</script>   
+
+</body>
+</html>
