@@ -166,7 +166,7 @@ h3{
     margin: 10px 0;
 }
 .row-box:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
     background: rgba(226,0,0,0.7);    
 }
 .row-box div{
@@ -247,6 +247,10 @@ p .fa{
 .sub-header h1{
     margin-top: 100px;
 }
+.col{
+    display: flex;
+    justify-content:space-between;
+} 
 .about-us{
     width: 80%;
     margin: auto;
@@ -264,5 +268,116 @@ p .fa{
     padding-top: 0;
 }
 .about-col p{
-    padding: 15px 0;
+    padding: 15px 0 25px; 
+} 
+@media(max-width: 700px){
+    .col{
+        display: block;
+    }
 }
+#spacing{
+    line-height:50px;
+    text-align: center;
+}
+#spacing h2{
+    border: 1px solid;
+    margin: 10px ;
+    color:black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#spacing h2:hover{
+    border-color:#f44336;
+    background-color:#f44336;
+    color:white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+    
+}
+
+/* ---------TASKS----------- */
+.mag{
+    margin: 20px;
+    border: 1px solid;
+    padding: 5px;
+    width: 60%;
+    height: 45vh;
+}
+.mag h4{
+    background:red;
+    text-align: center;
+    font-size:20px;
+}
+.mag .initial
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top:10px
+}
+.mag .place{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;   
+}
+
+/* .mag .address{
+    margin-left:22px;
+    margin-right:22px;
+} */
+
+
+.place input[type=text]{
+    width: 26%;
+    margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+}
+.place input[type=number]{
+    width: 27%;
+    margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+}
+.initial input[type=text]{
+    width: 40%;
+    margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+}
+.add input[type=text]{
+    width: 100%;
+    margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+}
+.label{
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+} 
+.subs{
+    margin-top: 20px;
+    text-align: center;
+}
+.info p{
+    font-size: 16px;
+    margin-left:-12px;
+    margin-bottom: -8px;
+}
+.info{
+    margin-left:53px
+    
+}   
